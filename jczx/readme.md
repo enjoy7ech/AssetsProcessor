@@ -21,7 +21,7 @@ nodejs
 2. 执行 `node splitPack.js`
 3. 解包出以下文件
 
-   ![1704853830188](/image/readme/1704853830188.png)
+   ![1704853830188](image/readme/1704853830188.png)
 
 4. AssetStudio: File -> load folder (CUSTOM_DEC 或者 PACKS_DEC)
 
