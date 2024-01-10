@@ -1,0 +1,49 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap": [
+      {
+        "name": "click1",
+        "file": "click1",
+        "interruptable": true
+      },
+      {
+        "name": "click2",
+        "file": "click2",
+        "interruptable": true
+      }
+    ],
+    "start": [
+      {
+        "file": "in"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.05,
+    "position_y": -8.0,
+    "edge_padding": false
+  },
+  "skeleton": "CG03_FireworksLoIent.prefab",
+  "atlases": [
+    {
+      "atlas": "fhx-CG03_FireworksLoIent.atlas.prefab",
+      "tex_names": [
+        "CG03_FireworksLoIent"
+      ],
+      "textures": [
+        "CG03_FireworksLoIent.png"
+      ]
+    }
+  ]
+}

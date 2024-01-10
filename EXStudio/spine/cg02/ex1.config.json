@@ -1,0 +1,88 @@
+{
+  "type": 0,
+  "textures": [
+    "CG02.png"
+  ],
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "hit_areas": [
+    {
+      "name": "char1",
+      "id": "body8",
+      "motion": "tap_char1#1:char1_touch",
+      "width": 5.0,
+      "height": 5.0
+    },
+    {
+      "name": "char2",
+      "id": "Char_2_bust_24",
+      "motion": "tap_char2#1:char2_touch",
+      "width": 4.0,
+      "height": 4.0
+    },
+    {
+      "name": "char3",
+      "id": "char3_1",
+      "motion": "tap_char3#1:char3_touch",
+      "width": 2.0,
+      "height": 2.0
+    }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap_char1#1": [
+      {
+        "name": "char1_touch",
+        "file": "char1_touch",
+        "priority": 9,
+        "interruptable": true
+      }
+    ],
+    "tap_char2#1": [
+      {
+        "name": "char2_touch",
+        "file": "char2_touch",
+        "priority": 9,
+        "interruptable": true
+      }
+    ],
+    "tap_char3#1": [
+      {
+        "name": "char3_touch",
+        "file": "char3_touch",
+        "priority": 9,
+        "interruptable": true
+      }
+    ],
+    "idle#1": [
+      {
+        "file": "idle"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.05,
+    "position_y": -3.0,
+    "edge_padding": false
+  },
+  "skeleton": "CG02.prefab",
+  "atlas": "CG02.atlas.prefab",
+  "atlases": [
+    {
+      "atlas": "CG02.atlas.prefab",
+      "tex_names": [
+        "CG02"
+      ],
+      "textures": [
+        "CG02.png"
+      ]
+    }
+  ]
+}

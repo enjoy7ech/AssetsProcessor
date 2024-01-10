@@ -1,0 +1,36 @@
+{
+  "idle": [
+    {
+      "file": "idle"
+    }
+  ],
+  "tap_char1#1": [
+    {
+      "name": "char1_touch",
+      "file": "char1_touch",
+      "priority": 9,
+      "interruptable": true
+    }
+  ],
+  "tap_char2#1": [
+    {
+      "name": "char2_touch",
+      "file": "char2_touch",
+      "priority": 9,
+      "interruptable": true
+    }
+  ],
+  "tap_char3#1": [
+    {
+      "name": "char3_touch",
+      "file": "char3_touch",
+      "priority": 9,
+      "interruptable": true
+    }
+  ],
+  "idle#1": [
+    {
+      "file": "idle"
+    }
+  ]
+}

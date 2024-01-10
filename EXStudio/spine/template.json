@@ -1,0 +1,61 @@
+{
+  "idle": [
+    {
+      "file": "idle"
+    }
+  ],
+  "tap_char1#1": [
+    {
+      "name": "char1_touch",
+      "file": "char1_touch",
+      "command": "stop_mtn 2;start_mtn tap_char2#2:char1_touch",
+      "priority": 9
+    }
+  ],
+  "tap_char2#2": [
+    {
+      "name": "char1_touch",
+      "file": "char1_touch",
+      "command": "stop_mtn 3;start_mtn tap_char3#3:char1_touch",
+      "priority": 9
+    },
+    {
+      "name": "char2_touch",
+      "file": "char2_touch",
+      "command": "stop_mtn 3;start_mtn tap_char3#3:char2_touch",
+      "priority": 9
+    }
+  ],
+  "tap_char3#3": [
+    {
+      "name": "char1_touch",
+      "file": "char1_touch",
+      "priority": 9
+    },
+    {
+      "name": "char2_touch",
+      "file": "char2_touch",
+      "priority": 9
+    },
+    {
+      "name": "char3_touch",
+      "file": "char3_touch",
+      "priority": 9
+    }
+  ],
+  "idle#1": [
+    {
+      "file": "idle"
+    }
+  ],
+  "idle#2": [
+    {
+      "file": "idle"
+    }
+  ],
+  "idle#3": [
+    {
+      "file": "idle"
+    }
+  ]
+}
