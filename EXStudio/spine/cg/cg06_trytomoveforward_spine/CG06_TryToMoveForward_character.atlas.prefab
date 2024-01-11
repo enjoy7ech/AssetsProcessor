@@ -189,14 +189,14 @@ L_clothes_5
 L_clothes_6
   rotate: false
   xy: 2, 1247
-  size: 855, 238
+  size: 0, 0
   orig: 855, 238
   offset: 0, 0
   index: -1
 L_clothes_shadow
   rotate: false
   xy: 2717, 760
-  size: 538, 553
+  size: 0, 0
   orig: 627, 557
   offset: 22, 4
   index: -1
@@ -630,21 +630,21 @@ L_rope_F_3
 L_rope_F_4
   rotate: false
   xy: 3332, 1329
-  size: 249, 25
+  size: 0, 25
   orig: 249, 29
   offset: 0, 2
   index: -1
 L_rope_F_5
   rotate: false
   xy: 379, 2534
-  size: 22, 184
+  size: 0, 0
   orig: 22, 188
   offset: 0, 0
   index: -1
 L_rope_F_6
   rotate: false
   xy: 4062, 3201
-  size: 27, 144
+  size: 0, 0
   orig: 27, 144
   offset: 0, 0
   index: -1
@@ -658,7 +658,7 @@ L_rope_L_1
 L_rope_L_1_1
   rotate: false
   xy: 3279, 3111
-  size: 120, 48
+  size: 0, 0
   orig: 120, 48
   offset: 0, 0
   index: -1
@@ -672,7 +672,7 @@ L_rope_L_2
 L_rope_L_2_2
   rotate: false
   xy: 2630, 3095
-  size: 298, 104
+  size: 0, 0
   orig: 298, 104
   offset: 0, 0
   index: -1
@@ -686,7 +686,7 @@ L_rope_L_3
 L_rope_L_3_3
   rotate: false
   xy: 2448, 2037
-  size: 247, 103
+  size: 0, 0
   orig: 247, 103
   offset: 0, 0
   index: -1
@@ -756,56 +756,56 @@ L_rosette_B
 L_rosette_L_1
   rotate: false
   xy: 2300, 2403
-  size: 117, 124
+  size: 0, 0
   orig: 117, 124
   offset: 0, 0
   index: -1
 L_rosette_L_2
   rotate: 180
   xy: 1728, 1533
-  size: 203, 207
+  size: 0, 0
   orig: 203, 208
   offset: 0, 0
   index: -1
 L_rosette_L_3
   rotate: false
   xy: 1492, 3147
-  size: 187, 226
+  size: 0, 0
   orig: 188, 226
   offset: 1, 0
   index: -1
 L_rosette_R_1
   rotate: false
   xy: 2, 3697
-  size: 120, 123
+  size: 0, 0
   orig: 120, 123
   offset: 0, 0
   index: -1
 L_rosette_R_2
   rotate: true
   xy: 1107, 182
-  size: 205, 256
+  size: 0, 0
   orig: 205, 256
   offset: 0, 0
   index: -1
 L_rosette_R_3
   rotate: true
   xy: 809, 243
-  size: 215, 298
+  size: 0, 0
   orig: 216, 298
   offset: 1, 0
   index: -1
 L_rosette_shadow_L
   rotate: true
   xy: 3107, 3107
-  size: 249, 204
+  size: 0, 0
   orig: 346, 204
   offset: 79, 0
   index: -1
 L_rosette_shadow_R
   rotate: false
   xy: 2298, 3
-  size: 228, 233
+  size: 0, 0
   orig: 230, 234
   offset: 0, 0
   index: -1
@@ -868,7 +868,7 @@ L_thigh_R
 L_thigh_shadow
   rotate: true
   xy: 1497, 2270
-  size: 180, 396
+  size: 0, 0
   orig: 205, 412
   offset: 21, 0
   index: -1
@@ -1057,14 +1057,14 @@ R_Eyebrow_R
 R_Glasses
   rotate: false
   xy: 2445, 1153
-  size: 287, 99
+  size: 0, 0
   orig: 295, 99
   offset: 0, 0
   index: -1
 R_Glasses_shadow
   rotate: false
   xy: 3416, 1379
-  size: 158, 45
+  size: 0, 0
   orig: 169, 46
   offset: 11, 0
   index: -1
@@ -1169,7 +1169,7 @@ R_calf_R
 R_clothes_1
   rotate: false
   xy: 2, 2689
-  size: 191, 63
+  size: 0, 0
   orig: 191, 63
   offset: 0, 0
   index: -1
@@ -1183,14 +1183,14 @@ R_clothes_2
 R_clothes_4
   rotate: false
   xy: 711, 2195
-  size: 210, 44
+  size: 0, 0
   orig: 210, 44
   offset: 0, 0
   index: -1
 R_clothes_5
   rotate: false
   xy: 3570, 3675
-  size: 321, 144
+  size: 0, 0
   orig: 321, 144
   offset: 0, 0
   index: -1
@@ -1456,35 +1456,35 @@ R_hand_R
 R_hat_1
   rotate: true
   xy: 1241, 1051
-  size: 209, 1091
+  size: 0, 0
   orig: 209, 1091
   offset: 0, 0
   index: -1
 R_hat_2
   rotate: 270
   xy: 159, 533
-  size: 225, 499
+  size: 0, 0
   orig: 225, 500
   offset: 0, 1
   index: -1
 R_hat_3
   rotate: false
   xy: 1684, 3679
-  size: 79, 141
+  size: 0, 0
   orig: 79, 141
   offset: 0, 0
   index: -1
 R_hat_4
   rotate: 180
   xy: 2786, 277
-  size: 452, 234
+  size: 0, 0
   orig: 452, 237
   offset: 0, 0
   index: -1
 R_hat_5
   rotate: 180
   xy: 1852, 448
-  size: 396, 239
+  size: 0, 0
   orig: 396, 242
   offset: 0, 0
   index: -1
@@ -1498,7 +1498,7 @@ R_hat_shadow_1
 R_hat_shadow_2
   rotate: false
   xy: 3732, 3150
-  size: 197, 134
+  size: 0, 0
   orig: 200, 134
   offset: 3, 0
   index: -1
@@ -1540,70 +1540,70 @@ R_phone
 R_pin_1
   rotate: false
   xy: 2113, 3320
-  size: 34, 141
+  size: 0, 0
   orig: 34, 141
   offset: 0, 0
   index: -1
 R_pin_2
   rotate: false
   xy: 287, 3787
-  size: 140, 32
+  size: 0, 0
   orig: 140, 32
   offset: 0, 0
   index: -1
 R_pin_shadow_1
   rotate: false
   xy: 4057, 3347
-  size: 34, 95
+  size: 0, 0
   orig: 34, 95
   offset: 0, 0
   index: -1
 R_pin_shadow_2
   rotate: false
   xy: 2888, 2311
-  size: 120, 27
+  size: 0, 0
   orig: 120, 27
   offset: 0, 0
   index: -1
 R_rope_B_1
   rotate: false
   xy: 2533, 3618
-  size: 25, 139
+  size: 0, 0
   orig: 25, 139
   offset: 0, 0
   index: -1
 R_rope_B_2
   rotate: false
   xy: 4064, 2510
-  size: 28, 216
+  size: 0, 0
   orig: 28, 216
   offset: 0, 0
   index: -1
 R_rope_B_3
   rotate: false
   xy: 1076, 3524
-  size: 26, 85
+  size: 0, 0
   orig: 26, 85
   offset: 0, 0
   index: -1
 R_rope_B_4
   rotate: false
   xy: 1121, 2739
-  size: 25, 191
+  size: 0, 0
   orig: 25, 192
   offset: 0, 1
   index: -1
 R_rope_R_1
   rotate: false
   xy: 2065, 2958
-  size: 45, 233
+  size: 0, 0
   orig: 45, 233
   offset: 0, 0
   index: -1
 R_rope_R_2
   rotate: false
   xy: 4033, 3213
-  size: 30, 607
+  size: 0, 0
   orig: 31, 607
   offset: 0, 0
   index: -1
@@ -1645,35 +1645,35 @@ R_shoe_R_2
 R_skirt_B
   rotate: false
   xy: 3760, 559
-  size: 334, 277
+  size: 0, 0
   orig: 334, 277
   offset: 0, 0
   index: -1
 R_skirt_F_1
   rotate: false
   xy: 3269, 539
-  size: 358, 288
+  size: 0, 0
   orig: 358, 288
   offset: 0, 0
   index: -1
 R_skirt_F_2
   rotate: false
   xy: 1280, 459
-  size: 539, 158
+  size: 0, 0
   orig: 539, 158
   offset: 0, 0
   index: -1
 R_skirt_F_3
   rotate: false
   xy: 3255, 3094
-  size: 608, 726
+  size: 0, 0
   orig: 608, 736
   offset: 0, 0
   index: -1
 R_skirt_shadow
   rotate: 270
   xy: 2, 1025
-  size: 263, 715
+  size: 0, 0
   orig: 264, 716
   offset: 1, 0
   index: -1

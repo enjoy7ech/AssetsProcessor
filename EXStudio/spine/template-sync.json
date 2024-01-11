@@ -1,5 +1,17 @@
 {
+  "start": [
+    {
+      "file": "in",
+      "command": "motions disable idle#1",
+      "post_command": "motions enable idle#1"
+    }
+  ],
   "idle": [
+    {
+      "file": "idle"
+    }
+  ],
+  "idle#1": [
     {
       "file": "idle"
     }
@@ -26,11 +38,6 @@
       "file": "char3_touch",
       "priority": 9,
       "interruptable": true
-    }
-  ],
-  "idle#1": [
-    {
-      "file": "idle"
     }
   ]
 }

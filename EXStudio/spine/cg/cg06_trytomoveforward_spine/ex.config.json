@@ -1,0 +1,76 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "hit_areas": [
+    {
+      "name": "char1",
+      "id": "R_Body",
+      "motion": "tap_char1#1:char1_touch",
+      "width": 6.0,
+      "height": 10.0
+    },
+    {
+      "name": "char2",
+      "id": "L_Body_1",
+      "motion": "tap_char2#1:char2_touch",
+      "width": 6.0,
+      "height": 10.0
+    }
+  ],
+  "motions": {
+    "start": [
+      {
+        "file": "in",
+        "command": "motions disable idle#1",
+        "post_command": "motions enable idle#1"
+      }
+    ],
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "idle#1": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap_char1#1": [
+      {
+        "name": "char1_touch",
+        "file": "click1",
+        "priority": 9,
+        "interruptable": true
+      }
+    ],
+    "tap_char2#1": [
+      {
+        "name": "char2_touch",
+        "file": "click2",
+        "priority": 9,
+        "interruptable": true
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.05,
+    "position_y": -9.0,
+    "edge_padding": false
+  },
+  "skeleton": "CG06_TryToMoveForward_character.prefab",
+  "atlases": [
+    {
+      "atlas": "CG06_TryToMoveForward_character.atlas.prefab",
+      "tex_names": [
+        "CG06_TryToMoveForward_character"
+      ],
+      "textures": [
+        "CG06_TryToMoveForward_character.png"
+      ]
+    }
+  ]
+}

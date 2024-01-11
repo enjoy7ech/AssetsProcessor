@@ -1,0 +1,91 @@
+{
+  "type": 9,
+  "textures": [
+    "CG_seashore.png"
+  ],
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "hit_areas": [
+    {
+      "name": "char1",
+      "id": "04_body",
+      "motion": "tap_char1#1:cha1_touch",
+      "width": 6.0,
+      "height": 6.0
+    },
+    {
+      "name": "char2",
+      "id": "01_butt",
+      "motion": "tap_char2#1:cha2_touch",
+      "width": 4.0,
+      "height": 4.0
+    },
+    {
+      "name": "char3",
+      "id": "02_face",
+      "motion": "tap_char3#1:cha3_touch",
+      "width": 4.0,
+      "height": 4.0
+    }
+  ],
+  "motions": {
+    "start": [
+      {
+        "file": "in",
+        "command": "motions disable idle#1",
+        "post_command": "motions enable idle#1"
+      }
+    ],
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "idle#1": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap_char1#1": [
+      {
+        "name": "cha1_touch",
+        "file": "cha1_touch",
+        "interruptable": true
+      }
+    ],
+    "tap_char2#1": [
+      {
+        "name": "cha2_touch",
+        "file": "cha2_touch",
+        "interruptable": true
+      }
+    ],
+    "tap_char3#1": [
+      {
+        "name": "cha3_touch",
+        "file": "cha3_touch",
+        "interruptable": true
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.05,
+    "edge_padding": false
+  },
+  "skeleton": "CG_seashore.prefab",
+  "atlas": "CG_seashore.atlas.prefab",
+  "atlases": [
+    {
+      "atlas": "CG_seashore.atlas.prefab",
+      "tex_names": [
+        "CG_seashore"
+      ],
+      "textures": [
+        "CG_seashore.png"
+      ]
+    }
+  ]
+}
