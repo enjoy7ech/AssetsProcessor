@@ -11,7 +11,11 @@ nodejs
 
 将文件夹进行批量解密
 
+#### 使用
+
+```
 Usage: npm run decrypt '$0'
+```
 
 #### 运行
 
@@ -26,6 +30,22 @@ Usage: npm run decrypt '$0'
    ![1704853934393](image/readme/1704853934393.png)
 
 5. 导出 prefab
+
+### union_bones
+
+将多个骨骼进行合并
+
+#### 使用
+
+```
+Usage:
+npm run union <...fileList> [-- <args>]
+
+所有数据按文件拖入顺序叠加，后面的文件则会渲染在上层
+
+Options:
+[-bones] 拖入文件的层级，如321，则第一个文件的bones会放在后面而不是按拖入次序叠加
+```
 
 ### ~~splitPack~~
 

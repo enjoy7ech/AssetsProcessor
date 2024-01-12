@@ -1,3 +1,3 @@
-# EX studio
+# EXStudio
 
-导出的 spine 在 EX studio 中重新构建
+导出的 spine 在 EX Studio 中重新构建

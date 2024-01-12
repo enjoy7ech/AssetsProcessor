@@ -1,0 +1,18 @@
+{
+  "type": 9,
+  "options": {
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "Acheron.atlas.prefab",
+      "tex_names": [
+        "Acheron"
+      ],
+      "textures": [
+        "Acheron.png"
+      ]
+    }
+  ]
+}

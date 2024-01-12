@@ -5,9 +5,14 @@
   "main": "index.js",
   "scripts": {
     "decrypt": "node scripts/decrypt.js",
+    "union": "node scripts/union_bones.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "iconv-lite": "^0.6.3",
+    "lodash": "^4.17.21",
+    "nanoid": "^3.3.7"
+  }
 }
