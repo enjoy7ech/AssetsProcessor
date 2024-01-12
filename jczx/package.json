@@ -1,7 +1,7 @@
 {
   "name": "jczx",
   "version": "1.0.0",
-  "description": "## dependence",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "decrypt": "node scripts/decrypt.js",

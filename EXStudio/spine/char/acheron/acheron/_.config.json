@@ -1,12 +1,28 @@
 {
   "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ]
+  },
   "options": {
+    "scale_factor": 0.1,
+    "position_y": -5.0,
     "edge_padding": false
   },
   "skeleton": "union.json",
   "atlases": [
     {
-      "atlas": "Acheron.atlas.prefab",
+      "atlas": "Acheron.atlas",
       "tex_names": [
         "Acheron"
       ],

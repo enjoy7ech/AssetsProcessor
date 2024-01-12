@@ -8,7 +8,9 @@
   "motions": {
     "idle": [
       {
-        "file": "idle"
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
       }
     ]
   },
@@ -20,7 +22,7 @@
   "skeleton": "union.json",
   "atlases": [
     {
-      "atlas": "Alps.atlas.prefab",
+      "atlas": "Alps.atlas",
       "tex_names": [
         "Alps"
       ],
@@ -29,4 +31,4 @@
       ]
     }
   ]
-}
+}w
