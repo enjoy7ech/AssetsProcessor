@@ -43,8 +43,6 @@ npm run union <...fileList> [-- <args>]
 
 所有数据按文件拖入顺序叠加，后面的文件则会渲染在上层
 
-Options:
-[-bones] 拖入文件的层级，如321，则第一个文件的bones会放在后面而不是按拖入次序叠加
 ```
 
 ### ~~splitPack~~
