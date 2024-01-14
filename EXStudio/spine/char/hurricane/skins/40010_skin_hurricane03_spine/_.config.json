@@ -1,0 +1,112 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "hit_areas": [
+    {
+      "name": "tv_0",
+      "id": "tv_0",
+      "motion": "tap_tv_0#3",
+      "width": 4.0,
+      "height": 4.0,
+      "center_x": -1.0,
+      "center_y": 5.0
+    },
+    {
+      "name": "cat",
+      "id": "cat",
+      "motion": "tap_cat#2",
+      "width": 3.0,
+      "height": 3.0
+    },
+    {
+      "name": "body",
+      "id": "body",
+      "motion": "tap_body#9",
+      "width": 2.0,
+      "height": 2.0
+    },
+    {
+      "name": "chest",
+      "id": "chest_l4",
+      "motion": "tap_chest#9",
+      "width": 2.0,
+      "height": 2.0
+    }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap_tv_0#3": [
+      {
+        "file": "click1",
+        "interruptable": true
+      }
+    ],
+    "tap_body#9": [
+      {
+        "file": "click3",
+        "sound": "Hurricane.acb.00013.wav"
+      },
+      {
+        "file": "click3",
+        "sound": "Hurricane.acb.00015.wav"
+      },
+      {
+        "file": "click3",
+        "sound": "Hurricane.acb.00017.wav"
+      }
+    ],
+    "tap_chest#9": [
+      {
+        "file": "click2",
+        "sound": "Hurricane.acb.00013.wav"
+      },
+      {
+        "file": "click2",
+        "sound": "Hurricane.acb.00015.wav"
+      }
+    ],
+    "tap_cat#2": [
+      {
+        "file": "click4",
+        "interruptable": true
+      }
+    ],
+    "idle#9": [
+      {
+        "file": "idle"
+      }
+    ],
+    "start": [
+      {
+        "file": "in",
+        "command": "motions disable idle#9",
+        "post_command": "motions enable idle#9"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": 1.0,
+    "edge_padding": false
+  },
+  "skeleton": "40010_skin_Hurricane03.prefab",
+  "atlases": [
+    {
+      "atlas": "40010_skin_Hurricane03.atlas.prefab",
+      "tex_names": [
+        "40010_skin_Hurricane03"
+      ],
+      "textures": [
+        "40010_skin_Hurricane03.png"
+      ]
+    }
+  ]
+}

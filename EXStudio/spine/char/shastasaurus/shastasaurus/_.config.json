@@ -1,0 +1,32 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -6.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "Shastasaurus.atlas.prefab",
+      "tex_names": [
+        "Shastasaurus"
+      ],
+      "textures": [
+        "Shastasaurus.png"
+      ]
+    }
+  ]
+}

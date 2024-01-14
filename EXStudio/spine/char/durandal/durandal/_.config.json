@@ -1,0 +1,47 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {
+      "enabled": true
+    },
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "tap": [
+      {
+        "sound": "Durandal.acb.00033.wav"
+      },
+      {
+        "sound": "Durandal.acb.00034.wav"
+      },
+      {
+        "sound": "Durandal.acb.00035.wav"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -11.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "Durandal.atlas.prefab",
+      "tex_names": [
+        "Durandal"
+      ],
+      "textures": [
+        "Durandal.png"
+      ]
+    }
+  ]
+}

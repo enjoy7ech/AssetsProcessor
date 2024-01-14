@@ -12,6 +12,17 @@
         "fade_in": 0,
         "fade_out": 0
       }
+    ],
+    "tap": [
+      {
+        "sound": "alps.acb.00039.wav"
+      },
+      {
+        "sound": "alps.acb.00034.wav"
+      },
+      {
+        "sound": "alps.acb.00031.wav"
+      }
     ]
   },
   "options": {
@@ -31,4 +42,4 @@
       ]
     }
   ]
-}w
+}

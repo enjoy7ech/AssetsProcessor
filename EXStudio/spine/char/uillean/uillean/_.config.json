@@ -1,0 +1,68 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "tap": [
+      {
+        "sound": "Uillean.acb.00030.wav"
+      },
+      {
+        "sound": "Uillean.acb.00031.wav"
+      },
+      {
+        "sound": "Uillean.acb.00032.wav"
+      },
+      {
+        "sound": "Uillean.acb.00033.wav"
+      },
+      {
+        "sound": "Uillean.acb.00034.wav"
+      },
+      {
+        "sound": "Uillean.acb.00035.wav"
+      },
+      {
+        "sound": "Uillean.acb.00036.wav"
+      },
+      {
+        "sound": "Uillean.acb.00037.wav"
+      },
+      {
+        "sound": "Uillean.acb.00038.wav"
+      },
+      {
+        "sound": "Uillean.acb.00039.wav"
+      },
+      {
+        "sound": "Uillean.acb.00040.wav"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "20240_break_Uillean.atlas.prefab",
+      "tex_names": [
+        "20240_break_Uillean"
+      ],
+      "textures": [
+        "20240_break_Uillean.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ]
+  },
+  "options": {
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "Thor.atlas.prefab",
+      "tex_names": [
+        "Thor"
+      ],
+      "textures": [
+        "Thor.png"
+      ]
+    }
+  ]
+}

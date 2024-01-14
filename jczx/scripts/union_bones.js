@@ -173,13 +173,33 @@ filePathList.forEach((filePath, i) => {
       });
     }
 
+    // transform
+    // name: 约束名称. 该名称在skeleton上唯一.
+    // order: 约束生效(applied)的顺序序数.
+    // skin: 若为true, 则只有当活动皮肤包含该约束时该约束才生效. 若省略则默认为false.
+    // bones: 将被约束控制transform的骨骼.
+    // target: 目标(target)骨骼的名称.
+    // rotation: 相对于目标骨骼的旋转角度偏移量. 若省略则默认为0.
+    // x: 相对于目标骨骼的X方向距离偏移量. 若省略则默认为0.
+    // y: 相对于目标骨骼的Y方向距离偏移量. 若省略则默认为0.
+    // scaleX: 相对于目标骨骼的X方向缩放偏移量. 若省略则默认为0.
+    // scaleY: 相对于目标骨骼的Y方向缩放偏移量. 若省略则默认为0.
+    // shearY: 相对于目标骨骼的Y方向斜切角度偏移量. 若省略则默认为0.
+    // rotateMix: 一个介于0到1区间的值, 表示约束对骨骼的影响, 其中0表示无影响, 1表示只有约束, 而中间值表示正常pose和约束的混合. 若省略则默认为1.
+    // translateMix: 参见 rotateMix.
+    // scaleMix: 参见 rotateMix.
+    // shearMix: 参见 rotateMix.
+    // local: 如果需要影响目标的局部transform则设置为True, 反之则影响全局transform. 若省略则默认为false.
+    // relative: 如果目标的transform为相对的则设置为True, 反之则其transform为绝对的. 若省略则默认为false.
     if (sk.transform) {
       _.forEach(sk.transform, (t) => {
         transformMap.set(t.name, t.name + transformId);
 
         skeleton.transform.push({
-          ...p,
+          ...t,
           order: order++,
+          bones: t.bones.map((o) => boneMap.get(o)),
+          target: boneMap.get(t.target),
           name: t.name + transformId,
         });
       });
@@ -210,6 +230,10 @@ filePathList.forEach((filePath, i) => {
     // height: 网格所用图像的高度, 非必要数据.
 
     function handleAttachment(item) {
+      // type: 附件类型. 若省略则默认为"region".
+      if (item.type === undefined) {
+        return item;
+      }
       if (item.type === "mesh") {
         let preIndex;
         let nxtIndex = 0;
@@ -266,7 +290,7 @@ filePathList.forEach((filePath, i) => {
             }
             _.forEach(attachments, (attachment, attachmentName) => {
               target.attachments[slotMap.get(slotName)][
-                attachmentMap.get(attachmentName)
+                attachmentMap.get(attachmentName) || attachmentName
               ] = handleAttachment(attachment);
             });
           });
@@ -279,7 +303,7 @@ filePathList.forEach((filePath, i) => {
             base.attachments[slotMap.get(slotName)] = {};
             _.forEach(attachments, (attachment, attachmentName) => {
               base.attachments[slotMap.get(slotName)][
-                attachmentMap.get(attachmentName)
+                attachmentMap.get(attachmentName) || attachmentName
               ] = handleAttachment(attachment);
             });
           });
@@ -354,10 +378,19 @@ filePathList.forEach((filePath, i) => {
             }
           });
         }
+        // attachment: 改变槽位内附件的关键帧.
         if (anim.slots) {
           if (!target.slots) target.slots = {};
           _.forEach(anim.slots, (param, slotName) => {
             if (!target.slots[slotMap.get(slotName)]) {
+              if (param.attachment) {
+                param.attachment = _.map(param.attachment, (o) => {
+                  return {
+                    ...o,
+                    name: attachmentMap.get(o.name) || o.name,
+                  };
+                });
+              }
               target.slots[slotMap.get(slotName)] = param;
             }
           });

@@ -1,0 +1,62 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0
+      }
+    ],
+    "tap": [
+      {
+        "sound": "Hurricane.acb.00030.wav"
+      },
+      {
+        "sound": "Hurricane.acb.00031.wav"
+      },
+      {
+        "sound": "Hurricane.acb.00032.wav"
+      },
+      {
+        "sound": "Hurricane.acb.00033.wav"
+      },
+      {
+        "sound": "Hurricane.acb.00034.wav"
+      },
+      {
+        "sound": "Hurricane.acb.00035.wav"
+      },
+      {
+        "sound": "Hurricane.acb.00036.wav"
+      },
+      {
+        "sound": "Hurricane.acb.00037.wav"
+      },
+      {
+        "sound": "Hurricane.acb.00038.wav"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -4.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "Hurricane.atlas.prefab",
+      "tex_names": [
+        "Hurricane"
+      ],
+      "textures": [
+        "Hurricane.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "hit_areas": [
+    {
+      "name": "leg_L",
+      "id": "leg_L",
+      "motion": "tap_leg_L#2:legL",
+      "width": 1.5,
+      "height": 4.0,
+      "center_x": -0.5,
+      "center_y": -2.0
+    },
+    {
+      "name": "leg_R",
+      "id": "leg_R",
+      "motion": "tap_leg_R#3:legR",
+      "width": 1.5,
+      "height": 4.0,
+      "center_x": 0.5,
+      "center_y": -2.0
+    },
+    {
+      "name": "Chest",
+      "id": "chest_R",
+      "motion": "tap_Chest#4:chest",
+      "width": 3.0,
+      "height": 2.0
+    },
+    {
+      "name": "cat_F_A1",
+      "id": "cat_F_A1",
+      "motion": "tap_cat_F_A1#1",
+      "width": 4.0,
+      "height": 2.0
+    },
+    {
+      "name": "bone",
+      "id": "bone",
+      "motion": "tap_bone#1",
+      "width": 4.0,
+      "height": 16.0,
+      "center_y": -2.0
+    }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap_leg_L#2": [
+      {
+        "name": "legL",
+        "file": "legL",
+        "command": "start_mtn tap_bone#1",
+        "post_command": "motions disable tap_leg_L#2;"
+      }
+    ],
+    "tap_leg_R#3": [
+      {
+        "name": "legR",
+        "file": "legR",
+        "command": "start_mtn tap_bone#1",
+        "post_command": "motions disable tap_leg_R#3"
+      }
+    ],
+    "tap_Chest#4": [
+      {
+        "name": "chest",
+        "file": "chest",
+        "command": "start_mtn tap_bone#1",
+        "post_command": "motions disable tap_Chest#4"
+      }
+    ],
+    "tap_bone#1": [
+      {
+        "file": "click",
+        "sound": "Durandal.acb.00013.wav"
+      },
+      {
+        "file": "click",
+        "sound": "Durandal.acb.00015.wav"
+      },
+      {
+        "file": "click",
+        "sound": "Durandal.acb.00016.wav"
+      }
+    ],
+    "tap_cat_F_A1#1": [
+      {
+        "file": "cat"
+      }
+    ],
+    "idle#1": [
+      {
+        "file": "idle",
+        "enabled": false
+      }
+    ],
+    "start": [
+      {
+        "file": "in",
+        "command": "motions disable idle#1",
+        "post_command": "motions enable idle#1"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -8.0,
+    "edge_padding": false
+  },
+  "skeleton": "6003003_skin_Durandal01.prefab",
+  "atlases": [
+    {
+      "atlas": "6003003_skin_Durandal01.atlas.prefab",
+      "tex_names": [
+        "6003003_skin_Durandal01"
+      ],
+      "textures": [
+        "6003003_skin_Durandal01.png"
+      ]
+    }
+  ]
+}
