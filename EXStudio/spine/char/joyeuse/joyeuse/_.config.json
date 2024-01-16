@@ -1,0 +1,63 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "tap": [
+      {
+        "sound": "Joyeuse.acb.00030.wav"
+      },
+      {
+        "sound": "Joyeuse.acb.00031.wav"
+      },
+      {
+        "sound": "Joyeuse.acb.00032.wav"
+      },
+      {
+        "sound": "Joyeuse.acb.00033.wav"
+      },
+      {
+        "sound": "Joyeuse.acb.00034.wav"
+      },
+      {
+        "sound": "Joyeuse.acb.00035.wav"
+      },
+      {
+        "sound": "Joyeuse.acb.00036.wav"
+      },
+      {
+        "sound": "Joyeuse.acb.00037.wav"
+      },
+      {
+        "sound": "Joyeuse.acb.00038.wav"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -8.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "Joyeuse.atlas.prefab",
+      "tex_names": [
+        "Joyeuse"
+      ],
+      "textures": [
+        "Joyeuse.png"
+      ]
+    }
+  ]
+}

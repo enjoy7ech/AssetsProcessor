@@ -1,0 +1,34 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -9.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "30430_break_Lepus.atlas.prefab",
+      "tex_names": [
+        "30430_break_Lepus"
+      ],
+      "textures": [
+        "30430_break_Lepus.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "hit_areas": [
+    {
+      "name": "BG1_guancai_a",
+      "id": "BG1_guancai_a",
+      "motion": "tap_BG1_guancai_a#1",
+      "width": 3.0,
+      "height": 6.5,
+      "center_x": 1.0,
+      "center_y": -0.5
+    },
+    {
+      "name": "legL3",
+      "id": "legL3",
+      "motion": "tap_legL3#2",
+      "width": 1.2,
+      "height": 6.0
+    },
+    {
+      "name": "mouth",
+      "id": "mouth",
+      "motion": "tap_mouth#1",
+      "width": 2.0,
+      "height": 2.0
+    }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "idle#1": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap_BG1_guancai_a#1": [
+      {
+        "file": "click2",
+        "sound": "melody.acb.00031.wav",
+        "interruptable": true
+      }
+    ],
+    "tap_mouth#1": [
+      {
+        "file": "click1",
+        "sound": "melody.acb.00032.wav",
+        "interruptable": true
+      }
+    ],
+    "tap_legL3#2": [
+      {
+        "file": "legL",
+        "sound": "melody.acb.00014.wav",
+        "post_command": "motions disable tap_legL3#2"
+      }
+    ],
+    "start": [
+      {
+        "file": "in",
+        "command": "motions disable idle#1",
+        "post_command": "motions enable idle#1"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -8.5,
+    "edge_padding": false
+  },
+  "skeleton": "2008003_Melody.prefab",
+  "atlases": [
+    {
+      "atlas": "2008003_Melody.atlas.prefab",
+      "tex_names": [
+        "2008003_Melody"
+      ],
+      "textures": [
+        "2008003_Melody.png"
+      ]
+    }
+  ]
+}

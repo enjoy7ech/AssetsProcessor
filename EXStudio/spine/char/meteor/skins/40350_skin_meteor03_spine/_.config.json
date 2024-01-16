@@ -1,0 +1,25 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -5.0,
+    "edge_padding": false
+  },
+  "skeleton": "40350_skin_Meteor03.prefab",
+  "atlases": [
+    {
+      "atlas": "40350_skin_Meteor03.atlas.prefab",
+      "tex_names": [
+        "40350_skin_Meteor03"
+      ],
+      "textures": [
+        "40350_skin_Meteor03.png"
+      ]
+    }
+  ]
+}

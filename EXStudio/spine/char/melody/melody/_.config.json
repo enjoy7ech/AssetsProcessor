@@ -1,0 +1,54 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "tap": [
+      {
+        "sound": "melody.acb.00034.wav"
+      },
+      {
+        "sound": "melody.acb.00035.wav"
+      },
+      {
+        "sound": "melody.acb.00036.wav"
+      },
+      {
+        "sound": "melody.acb.00037.wav"
+      },
+      {
+        "sound": "melody.acb.00038.wav"
+      },
+      {
+        "sound": "melody.acb.00039.wav"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -8.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "Melody.atlas.prefab",
+      "tex_names": [
+        "Melody"
+      ],
+      "textures": [
+        "Melody.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "tap": [
+      {
+        "sound": "Arpeggio.acb.00030.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00031.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00032.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00033.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00034.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00035.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00036.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00037.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00038.wav"
+      },
+      {
+        "sound": "Arpeggio.acb.00039.wav"
+      }
+    ],
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -5.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "20110_Arpeggio.atlas.prefab",
+      "tex_names": [
+        "20110_Arpeggio"
+      ],
+      "textures": [
+        "20110_Arpeggio.png"
+      ]
+    }
+  ]
+}

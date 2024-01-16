@@ -1,0 +1,34 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -7.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "60280_break_Clarent.atlas.prefab",
+      "tex_names": [
+        "60280_break_Clarent"
+      ],
+      "textures": [
+        "60280_break_Clarent.png"
+      ]
+    }
+  ]
+}

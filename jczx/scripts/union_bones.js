@@ -216,28 +216,27 @@ filePathList.forEach((filePath, i) => {
     //        ...
     //     }
     //  }
-    // mesh附件属性:
-
-    // path: 指定后, 将使用该值查找texture区域而非附件名称.
-    // uvs: 一个坐标列表, 表示每个顶点的texture坐标.
-    // triangles: 一个顶点索引列表, 定义了网格中的每个三角形.
-    // vertices: 包含每个顶点的x,y对, 影响该顶点的骨骼数量(用于加权网格), 以及用于这些骨骼的: 骨骼索引, 绑定位置X坐标, 绑定位置Y坐标, 权重. 若顶点数量 > UV数量, 则该网格为加权网格.
-    // mesh-vertices数据格式: [影响该点的bone数量, ...(bone1的索引, 该点的绑定位置X坐标, 该点的绑定位置Y坐标, 权重)]
-    // hull: 构成多边形壳的顶点数量. 壳顶点保持在vertices列表首位.
-    // edges: 一个顶点索引对的列表, 定义了连接顶点之间的边. 非必要数据.
-    // color: 用于附件tint(染色)的颜色. 若省略则默认为FFFFFFF RGBA.
-    // width: 网格所用图像的宽度, 非必要数据.
-    // height: 网格所用图像的高度, 非必要数据.
 
     function handleAttachment(item) {
       // type: 附件类型. 若省略则默认为"region".
       if (item.type === undefined) {
         return item;
       }
+      // mesh附件属性:
+      // path: 指定后, 将使用该值查找texture区域而非附件名称.
+      // uvs: 一个坐标列表, 表示每个顶点的texture坐标.
+      // triangles: 一个顶点索引列表, 定义了网格中的每个三角形.
+      // vertices: 包含每个顶点的x,y对, 影响该顶点的骨骼数量(用于加权网格), 以及用于这些骨骼的: 骨骼索引, 绑定位置X坐标, 绑定位置Y坐标, 权重. 若顶点数量 > UV数量, 则该网格为加权网格.
+      // mesh-vertices数据格式: [影响该点的bone数量, ...(bone1的索引, 该点的绑定位置X坐标, 该点的绑定位置Y坐标, 权重)]
+      // hull: 构成多边形壳的顶点数量. 壳顶点保持在vertices列表首位.
+      // edges: 一个顶点索引对的列表, 定义了连接顶点之间的边. 非必要数据.
+      // color: 用于附件tint(染色)的颜色. 若省略则默认为FFFFFFF RGBA.
+      // width: 网格所用图像的宽度, 非必要数据.
+      // height: 网格所用图像的高度, 非必要数据.
       if (item.type === "mesh") {
-        let preIndex;
-        let nxtIndex = 0;
         if (item.vertices.length > item.uvs.length) {
+          let preIndex;
+          let nxtIndex = 0;
           _.forEach(item.vertices, (o, i) => {
             if (i === nxtIndex) {
               preIndex = nxtIndex - 1;
@@ -256,9 +255,9 @@ filePathList.forEach((filePath, i) => {
         }
       }
       if (item.type === "path") {
-        let preIndex = 0;
-        let nxtIndex = 0;
-        if (item.vertices.length > item.vertexCount * 2) {
+        if (item.vertices.length > +item.vertexCount * 2) {
+          let preIndex = 0;
+          let nxtIndex = 0;
           _.forEach(item.vertices, (o, i) => {
             if (i === nxtIndex) {
               preIndex = nxtIndex;
@@ -271,6 +270,33 @@ filePathList.forEach((filePath, i) => {
             }
           });
 
+          return item;
+        } else {
+          return item;
+        }
+      }
+      // clipping附件属性:
+      // end: 裁剪停止时的槽位名称.
+      // vertexCount: 裁剪多边形的顶点数量.
+      // vertices: 包含每个顶点的x,y对, 影响该顶点的骨骼数量(用于加权裁剪多边形), 以及用于这些骨骼的: 骨骼索引, 绑定位置X坐标, 绑定位置Y坐标, 权重. 若顶点数量 > 顶点总数, 则该多边形为加权裁剪多边形.
+      // color: Spine中裁剪附件的颜色. 若省略则默认为CE3A3AFF RGBA. 非必要数据.
+      if (item.type === "clipping") {
+        if (item.vertices.length > +item.vertexCount) {
+          let preIndex;
+          let nxtIndex = 0;
+          _.forEach(item.vertices, (o, i) => {
+            if (i === nxtIndex) {
+              preIndex = nxtIndex - 1;
+              nxtIndex = nxtIndex + o * 4 + 1;
+            }
+            // 取第二位
+            if ((i - preIndex) % 4 === 2) {
+              // 加上偏移索引
+              item.vertices[i] += boneIndexOffset;
+            }
+          });
+
+          item.end = slotMap.get(item.end);
           return item;
         } else {
           return item;
@@ -460,6 +486,7 @@ filePathList.forEach((filePath, i) => {
   } catch (error) {
     console.log(error);
     console.log(`合并骨骼${filePath}失败`);
+    exit();
   }
 });
 

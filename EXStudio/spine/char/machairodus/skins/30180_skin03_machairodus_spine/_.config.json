@@ -1,0 +1,78 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {
+      "items": [
+        {
+          "name": "cone",
+          "ids": [
+            "F_cone_02_shadow",
+            "F_cone_01_shadow"
+          ],
+          "hidden": true
+        }
+      ],
+      "enabled": true
+    },
+    "slot_color": {}
+  },
+  "hit_areas": [
+    {
+      "name": "char1",
+      "id": "body_bu2b",
+      "motion": "tap_char1#1",
+      "width": 4.0,
+      "height": 8.0
+    }
+  ],
+  "motions": {
+    "start": [
+      {
+        "file": "in",
+        "command": "motions disable idle#1",
+        "post_command": "motions enable idle#1",
+        "enabled": false
+      }
+    ],
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "idle#1": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap_char1#1": [
+      {
+        "name": "char1_touch",
+        "file": "click1",
+        "sound": "machairodus.acb.00009.wav"
+      },
+      {
+        "name": "char2_touch",
+        "file": "click2",
+        "sound": "machairodus.acb.00010.wav"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -9.0,
+    "edge_padding": false
+  },
+  "skeleton": "30180_skin03_Machairodus.prefab",
+  "atlases": [
+    {
+      "atlas": "30180_skin03_Machairodus.atlas.prefab",
+      "tex_names": [
+        "30180_skin03_Machairodus"
+      ],
+      "textures": [
+        "30180_skin03_Machairodus.png"
+      ]
+    }
+  ]
+}

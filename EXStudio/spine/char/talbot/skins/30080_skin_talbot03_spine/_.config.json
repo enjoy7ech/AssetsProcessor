@@ -1,0 +1,65 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "hit_areas": [
+    {
+      "name": "Footthumb_R",
+      "id": "Footthumb_R",
+      "motion": "tap_Footthumb_R#1",
+      "width": 2.0,
+      "height": 2.0
+    }
+  ],
+  "motions": {
+    "idle": [
+      {
+        "file": "idle"
+      }
+    ],
+    "idle#1": [
+      {
+        "file": "idle"
+      }
+    ],
+    "tap_Footthumb_R#1": [
+      {
+        "file": "click1",
+        "sound": "Talbot.acb.00016.wav",
+        "interruptable": true
+      },
+      {
+        "file": "click2",
+        "sound": "Talbot.acb.00019.wav",
+        "interruptable": true
+      }
+    ],
+    "start": [
+      {
+        "file": "in",
+        "command": "motions disable idle#1",
+        "post_command": "motions enable idle#1"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -9.0,
+    "edge_padding": false
+  },
+  "skeleton": "30080_skin_Talbot03.prefab",
+  "atlases": [
+    {
+      "atlas": "30080_skin_Talbot03.atlas.prefab",
+      "tex_names": [
+        "30080_skin_Talbot03"
+      ],
+      "textures": [
+        "30080_skin_Talbot03.png"
+      ]
+    }
+  ]
+}

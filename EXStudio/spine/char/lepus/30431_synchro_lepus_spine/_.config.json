@@ -1,0 +1,45 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "idle#1": [
+      {
+        "file": "jiguang"
+      },
+      {
+        "file": "zhayan"
+      },
+      {
+        "file": "zhua"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -8.0,
+    "edge_padding": false
+  },
+  "skeleton": "union.json",
+  "atlases": [
+    {
+      "atlas": "30431_Synchro_Lepus.atlas.prefab",
+      "tex_names": [
+        "30431_Synchro_Lepus"
+      ],
+      "textures": [
+        "30431_Synchro_Lepus.png"
+      ]
+    }
+  ]
+}

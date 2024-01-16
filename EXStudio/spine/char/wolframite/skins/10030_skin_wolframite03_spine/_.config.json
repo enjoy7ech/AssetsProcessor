@@ -1,0 +1,45 @@
+{
+  "type": 9,
+  "controllers": {
+    "intimacy_system": {},
+    "slot_opacity": {},
+    "slot_color": {}
+  },
+  "motions": {
+    "idle": [
+      {
+        "file": "idle",
+        "fade_in": 0,
+        "fade_out": 0
+      }
+    ],
+    "tap": [
+      {
+        "sound": "wolframite.acb.00039.wav"
+      },
+      {
+        "sound": "wolframite.acb.00040.wav"
+      },
+      {
+        "sound": "wolframite.acb.00041.wav"
+      }
+    ]
+  },
+  "options": {
+    "scale_factor": 0.1,
+    "position_y": -7.0,
+    "edge_padding": false
+  },
+  "skeleton": "10030_skin_Wolframite03.prefab",
+  "atlases": [
+    {
+      "atlas": "10030_skin_Wolframite03.atlas.prefab",
+      "tex_names": [
+        "10030_skin_Wolframite03"
+      ],
+      "textures": [
+        "10030_skin_Wolframite03.png"
+      ]
+    }
+  ]
+}
